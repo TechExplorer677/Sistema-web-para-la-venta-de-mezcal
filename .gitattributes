@@ -1,0 +1,13 @@
+# 🔹 Forzar que todo .php sea detectado como PHP
+*.php linguist-language=PHP
+
+# 🔹 Evitar que GitHub cuente dependencias como código del proyecto
+/vendor/* linguist-vendored
+/node_modules/* linguist-vendored
+/public/js/vendor/* linguist-vendored
+/public/css/vendor/* linguist-vendored
+
+# 🔹 Ignorar archivos de configuración o build en estadísticas
+*.lock linguist-generated
+*.min.js linguist-generated
+*.min.css linguist-generated
