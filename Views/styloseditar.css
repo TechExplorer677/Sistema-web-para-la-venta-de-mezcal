@@ -1,0 +1,20 @@
+body{
+    background: url(../img/editarPro.webp) no-repeat;
+    background-size: cover;
+}
+label {
+    display: inline-block;
+        /* Para que los estilos de ancho y altura funcionen */
+        padding: 1px;
+        /* Espacio alrededor del texto dentro del label */
+        border: 1px;
+        /* Borde sólido de 2px de color azul */
+        background-color: #f0f0f0;
+        /* Color de fondo gris claro */
+        color: blue;
+        /* Color de texto rojo */
+        font-size: 18px;
+        /* Tamaño de fuente de 18px */
+        border-radius: 5px;
+        /* Bordes redondeados */
+}

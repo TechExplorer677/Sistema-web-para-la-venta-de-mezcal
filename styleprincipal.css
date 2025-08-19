@@ -1,0 +1,747 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400;500;600;700&display=swap');
+@import url('https: //fontawesome.com/icons');
+/* Variables */
+:root {
+    --cafe: rgb(70, 46, 46);
+    --cafeTranspartente: rgba(70, 46, 46, 0.95);
+}
+
+/* Diseños generales */
+body {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Raleway', sans-serif;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+@keyframes slideIn {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+h1 {
+    animation: slideIn 3s ease-in-out;
+}
+/* Definir las animaciones */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 2;
+    }
+}
+
+/* Aplicar las animaciones a los elementos */
+h2,
+h3,
+p {
+    animation: slideIn 4s ease-in-out;
+}
+.inicio{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url(img/atardecer2.jpg) no-repeat center;
+    background-size: cover;
+    
+}
+.nosotros {
+    background: url(img/Inteligencia1.png) no-repeat center;
+    background-attachment: fixed;
+    background-size: cover;
+    text-align: center;
+    padding: 2rem 0;
+    /* Asegura que haya espacio alrededor del contenido */
+}
+.productos{
+    
+        background: #313743;
+        height: 100px;
+}
+.contacto{
+    background: #313743;
+}
+.productos .heading{
+    color: #fff;
+}
+.contacto .heading {
+    color: #fff;
+}
+.inicio .imagenbotella img{
+    width: 40vh;
+    animation: float 3s linear infinite;
+}
+@keyframes float {
+    0%, 100%{
+        transform: translateY(0rem);
+
+    }
+    50%{
+        transform: translateY(-3.5rem);
+    }
+
+    
+}
+.inicio .content h1{
+    font-size: 3rem;
+    color: black;
+    text-transform: uppercase;
+    text-align: center;
+
+}
+
+.inicio .content h2{
+    font-size: 1.8rem;
+    color: black;
+    text-transform: uppercase;
+    padding: 1rem 0;
+}
+.inicio .content {
+    display: flex;
+    flex-direction: column;
+    /* Establece la dirección del flexbox como columna */
+    align-items: center;
+    /* Centra los elementos horizontalmente */
+    text-align: center;
+    /* Alinea el texto al centro */
+    max-width: 800px;
+    /* Ajusta el ancho máximo si es necesario */
+    margin: auto;
+    /* Centra horizontalmente el contenido */
+}
+
+.inicio .content h1,
+.inicio .content h2 {
+    color: #fff;
+    margin: 10px 0;
+    /* Añade un margen entre los elementos */
+}
+.inicio .content h2{
+    font-weight: bold;
+color: #fff;
+}
+.inicio .content h1{
+    font-weight: bold;
+}
+.productos .caja-contenedor{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+.productos .caja-contenedor .caja{
+    flex: 1 1 30rem;
+    background: transparent;
+    border-radius: .5rem;
+    padding: 3rem 2rem;
+    border-radius: .5rem;
+    text-align: justify;
+    transition: .2s linear;
+}
+.productos .caja-contenedor .caja{
+    font-size: 1.5rem;
+    color: black;
+    padding-top: 1rem;
+    
+}
+.productos .caja-contenedor .caja p{
+    font-size: 1.3rem;
+    color: black;
+    padding: 1rem 0;
+}
+.productos .caja-contenedor .caja img {
+width: 40vh;
+}
+.productos .caja-contenedor .caja h3{
+    color: #CCCCCC;;
+    text-align: center;
+}
+.productos .caja-contenedor .caja a{
+    display: inline-block;
+        background-color: #4CAF50;
+        /* Verde */
+        color: white;
+        padding: 10px 20px;
+        text-align: center;
+        text-decoration: none;
+        border-radius: 4px;
+        font-size: 16px;
+        cursor: pointer;
+}
+.productos .caja-contenedor .caja a:hover{
+        background-color: #45a049;
+}
+.productos .caja-contenedor p {
+    font-size: 1.3rem;
+    color: #CCCCCC;
+    padding: 1rem 0;
+}
+.contacto h4{
+    color: #CCCCCC;
+        
+}
+
+.nosotros .content {
+    display: flex;
+    flex-direction: column;
+    /* Asegura que los elementos se apilen verticalmente */
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.nosotros .heading {
+    font-weight: 800;
+}
+
+.nosotros .content p {
+    text-align: justify;
+    font-size: 1.6rem;
+    color: white;
+    font-weight: 600;
+    padding: 1rem 0;
+}
+.nosotros .content h2{
+    font-size: 2rem;
+    font-weight: 600;
+    text-align: center;
+    padding: 1rem 0;
+    color: whitesmoke;
+    width: 100%;
+}
+.nosotros .content h3 {
+    font-size: 1.8rem;
+    text-align: center;
+    padding: 1rem 0;
+    color: black;
+    width: 100%;
+    /* Asegura que ocupe todo el ancho disponible */
+}
+
+.nosotros h4 {
+    font-size: 1.5rem;
+    text-align: center;
+    color: white;
+    width: 100%;
+    /* Asegura que ocupe todo el ancho disponible */
+    /* Añade un margen superior para separar los elementos */
+}
+.nosotros h5 {
+    font-size: 1.5rem;
+    text-align: center;
+    color: whitesmoke;
+    width: 100%;
+    /* Asegura que ocupe todo el ancho disponible */
+    margin-top: 1rem;
+    /* Añade un margen superior para separar los elementos */
+}
+.contacto .content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+.contacto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contacto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    /* Distribuye los elementos horizontalmente */
+    width: 100%;
+    /* Asegura que la sección ocupe todo el ancho disponible */
+    max-width: 1200px;
+    /* Establece un ancho máximo */
+    margin-top: 20px;
+    /* Ajusta el margen superior según sea necesario */
+}
+
+.columna1,
+.columna2 {
+    width: 48%;
+    /* Establece el ancho de cada columna */
+}
+
+.columna1 h4,
+.columna2 h4 {
+     margin-top: 5;
+/*  Elimina el margen superior de los h4 */
+}
+.columna2 {
+    display: flex;
+    /* Usamos flexbox para alinear verticalmente los elementos */
+    flex-direction: column;
+    /* Los elementos se apilan verticalmente */
+    justify-content: center;
+    /* Centramos verticalmente los elementos */
+    align-items: center;
+    /* Centramos horizontalmente los elementos */
+    width: 48%;
+}
+
+.columna2 .direccion {
+    margin-bottom: 20px;
+    /* Espacio entre la dirección y el texto */
+}
+.contacto .content p {
+    font-size: 1.3rem;
+    color: #CCCCCC;;
+    padding: 1rem 0;
+}
+
+.contacto .content h3 {
+    font-size: .5rem;
+    text-align: center;
+}
+
+.contacto h4 {
+    font-size: 1.5rem;
+    text-align: center;
+}
+.contacto img{
+    align-items: center;
+}
+.inicio{
+    min-height: 100vh;
+        padding: 0 9%;
+        padding-top: 7.5rem;
+        padding-bottom: 2rem;
+}
+.productos{
+        min-height: 100vh;
+            padding: 0 9%;
+            padding-top: 7.5rem;
+            padding-bottom: 2rem;
+}
+.nosotros{
+        min-height: 50vh;
+            padding: 0 9%;
+            padding-top: 7.5rem;
+            padding-bottom: 2rem;
+}
+.contacto{
+        min-height: 50vh;
+            padding: 0 9%;
+            padding-top: 7.5rem;
+            padding-bottom: 2rem;
+}
+/*section{
+    min-height: 50vh;
+    padding: 0 5%;
+    padding-top: 7.5rem;
+    padding-bottom: 2rem;
+}*/
+@media(max-width:768px){
+    .inicio{
+        flex-flow: column-reverse;
+    }
+    .inicio .imagenbotella img{
+        width: 100%;
+    }
+    .inicio .content h3{
+        font-size: 3.6rem;
+    }
+    .inicio .content p{
+        font-size: 1.5rem;
+    }
+
+
+}
+        .footer {
+            padding-top: 0rem;
+            background: url(img/footer-fondo.png) no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+        
+        
+.footer .caja-mayor{
+    display: flex;
+    flex-wrap: wrap;
+}
+.footer .caja-mayor .caja1{
+    flex: 1 1 1rem;
+    margin: 2rem;
+}
+.footer .caja-mayor .caja2{
+    flex: 1 1 1rem;
+    margin: 2rem;
+}
+.footer .caja-mayor .caja1 h3{
+    font-size: 1rem;
+    padding: 1rem 0;
+    color: wheat;
+    text-decoration: underline;
+    text-underline-offset: 1rem;
+}
+.footer .caja-mayor .caja2 h3 {
+    font-size: 1rem;
+    padding: 1rem 0;
+    color: wheat;
+    text-decoration: underline;
+    text-underline-offset: 1rem;
+}
+.footer .caja-mayor .caja1 p{
+    font-size: 1rem;
+    padding: .5rem 0;
+    color: whitesmoke;
+}
+
+.footer .caja-mayor .caja1 a{
+    display: block;
+    font-size: 1rem;
+    padding: .5rem 0;
+    color: wheat;
+}
+.footer .caja-mayor .caja2 a {
+    font-size: 1rem;
+    padding: .5rem 0;
+    color: wheat;
+}
+.footer .caja-mayor .caja1 a:hover{
+    text-decoration: underline;
+}
+.footer .caja-mayor .caja2 a:hover {
+    text-decoration: underline;
+}
+.footer .caja-mayor .caja1 .info{
+    display: flex;
+    align-items: center;
+}
+
+.footer .caja-mayor .caja1 .info i{
+    margin: .5rem 0;
+    margin-right: 1rem;
+    border-radius: 50%;
+    background: whitesmoke;
+    color: rgb(0, 0, 0);
+    font-size: 1rem;
+    height: 2rem;
+    width: 2rem;
+    line-height: 2rem;
+    text-align: center;
+}
+.footer .caja-mayor .caja2 i {
+    margin: .5rem 0;
+    margin-right: 1rem;
+    border-radius: 50%;
+    background: whitesmoke;
+    color: rgb(0, 0, 0);
+    font-size: 1rem;
+    height: 2rem;
+    width: 2rem;
+    line-height: 2rem;
+    text-align: center;
+}
+.footer .creditos{
+    font-size: 1rem;
+    font-weight: .5rem;
+    letter-spacing: 0rem;
+    color: wheat;
+    border-top: .1rem solid white;
+    padding: 2.5rem 1rem;
+    text-align: center;
+}
+a{
+    font-size: 1.5rem;
+    color:rgb(5, 200, 226);
+    text-decoration: none;
+    text-transform: capitalize;
+}
+a:hover {
+    color: white;
+}
+.heading{
+    text-align: center;
+    background-color: black;
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    font-size: 2rem;
+    text-transform: uppercase;
+    padding: 1rem;
+}
+
+h1 {
+    font-size: 60px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    margin-top: 25px;
+}
+
+h2 {
+    font-size: 40px;
+    font-weight: 300;
+    text-align: center;
+    padding-top: 30px;
+}
+
+
+
+p {
+    font-size: 20px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    text-align: justify;
+}
+
+/*img {
+    width: 50px;
+    height: auto;
+}
+
+
+
+Navegacion*/
+
+nav::-webkit-scrollbar {
+    /*background*/
+    width: 2px;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+nav::-webkit-scrollbar-thumb {
+    width: 2px;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+nav {
+    border-radius: 10px;
+    padding: 10px 0px 30px 0px;
+    margin: 10px 10px 0px 0px;
+    /*10px 0px 10px 0px*/
+
+
+    position: fixed;
+    z-index: 1;
+    right: 0px;
+    /*left*/
+
+    width: 25%;
+    max-height: 650px;
+    overflow-y: auto;
+
+    backdrop-filter: blur(40px);
+    color: white;
+    background-color: rgba(24, 22, 54, 0.8);
+
+    transition: width 1.5s, max-height 2s 1s;
+}
+
+.ocultarSeccionNav {
+    width: 55px;
+    max-height: 10px;
+    overflow: hidden;
+    border-radius: 20px;
+    transition: width 1.5s, max-height 2s 1s, border-radius 2s;
+}
+
+.ocultarSeccionNav .seccionNav,
+.ocultarSeccionNav h2 {
+    transform: translateX(220px);
+    transition: all 2s;
+}
+
+nav .header img {
+    position: absolute;
+    top: 12px;
+    left: 14px;
+    width: 25px;
+    height: auto;
+}
+
+nav img {
+    filter: invert(100%);
+    width: auto;
+    height: 25px;
+}
+
+nav h2 {
+    padding: 0px;
+    font-size: 23px;
+    font-weight: 500;
+    margin: 10px 0px 0px 0px;
+}
+
+nav p {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+nav>div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 50px;
+}
+
+nav .header {
+    margin: 30px 0px;
+}
+
+nav .visible,
+nav .darkMode {
+    display: flex;
+    align-items: center;
+    height: 63px;
+}
+
+nav .visible p,
+nav .darkMode p {
+    margin-left: 20px;
+    width: 175px;
+}
+
+nav .seccionNav {
+    overflow: hidden;
+    gap: 15px;
+}
+
+nav .oculto {
+    height: 0px;
+    transform: translateY(200px);
+    transition: all 1s;
+}
+
+nav .mostrar {
+    background-color: white;
+    color: black;
+    border-radius: 20px;
+    width: 320px;
+    transform: translateY(0px);
+    transition: transform 1s;
+}
+
+nav .mostrar h4 {
+    color: #4035db;
+    font-size: 18px;
+    font-weight: 400;
+    margin: 22px 0px 0px 0px;
+}
+
+nav .mostrar .blanco,
+nav .mostrar .gris {
+    padding: 0px 15px;
+}
+
+nav .mostrar .blanco p,
+nav .mostrar .gris p {
+    padding: 5px 0px;
+    font-size: 16px;
+    font-weight: 500;
+    margin: 10px;
+    cursor: pointer;
+    color: #313743;
+}
+
+nav .mostrar .blanco p:active,
+nav .mostrar .gris p:active {
+    font-weight: 700;
+    color: #4035db;
+}
+
+nav .mostrar .gris {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-top: 5px;
+
+    border-radius: 20px;
+    background-color: #e4eaf5;
+}
+
+nav .mostrar .RedesSociales {
+    display: grid;
+    margin: auto;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 20px;
+
+}
+
+nav .mostrar .RedesSociales img {
+    filter: saturate(150%);
+    width: 50px;
+    height: auto;
+}
+
+
+nav .mostrar .RedesSociales>div {
+    display: flex;
+    align-items: center;
+}
+
+nav .mostrar .RedesSociales>div p {
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.arriba {
+    transform: rotate(-180deg);
+    transition: transform 1s;
+}
+
+.abajo {
+    transform: rotate(0deg);
+    transition: transform 1s;
+}
+
+/* Diseños especificos */
+
+
+
+
+
+/* Responsive */
+
+/* phone */
+/* @media (min-width: 480px ) {
+    body{
+        background-color: red;
+    }
+
+} */
+
+/* tablet */
+/* @media (min-width: 768px ) {
+    body{
+        background-color: blue;
+    }
+} */
+
+/* desktop */
+/* @media (min-width: 992px ) {
+    body{
+        background-color: green;
+    }
+} */
+
+/* Responsive */
+
+/* phone */
+@media (min-width: 0px) and (max-width: 991px) {
+    .informacionGeneral>div:first-child {
+        border-right: 0px solid black;
+    }
+
+}

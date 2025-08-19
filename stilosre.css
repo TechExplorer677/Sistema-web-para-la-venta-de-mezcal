@@ -1,0 +1,109 @@
+.container {
+    color: whitesmoke;
+    font-weight: bold;
+}
+
+body {
+    background: url(./fondo2.jpg) no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+* {
+    font-family: "Lato", sans-serif;
+    font-family: "Open Sans", sans-serif;
+    font-family: "PT Sans", sans-serif;
+    box-sizing: border-box;
+
+}
+
+/*<link rel="stylesheet" type="text/css"
+href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+form {
+    width: 500px;
+    border: 2px solid black;
+    padding: 5rem;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Fondo negro con 50% de opacidad *
+    border: none;
+    border-radius: 20px;
+    color: aliceblue;
+}*/
+
+h1 {
+    display: block;
+    border: 2px solid black;
+    width: 95%;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+
+}
+
+label {
+    color: wheat;
+    font-size: 18px;
+    padding: 20px;
+    font-weight: 300;
+}
+
+input {
+    display: block;
+    border: 2px solid black;
+    color: black;
+    width: 95%;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+button {
+    float: right;
+    padding: .5rem;
+    width: 30%;
+    height: 15%;
+    border-radius: 5px;
+    margin-left: auto;
+    text-decoration: none;
+    transition: color 0.8s ease-in-out, transform 0.8s ease-in-out, background-color 0.8s ease-in-out;
+}
+
+button:hover {
+    color: #2aafc1;
+    transform: scale(1.4);
+    background-color: black;
+}
+
+a {
+    float: left;
+    color: white;
+    margin-left: 10px;
+    padding: .5rem;
+    text-decoration: none;
+    transition: color 0.8s ease-in-out, transform 0.8s ease-in-out, background-color 0.8s ease-in-out;
+}
+
+a:hover {
+
+    color: #2aafc1;
+    transform: scale(1.2);
+    background-color: black;
+}
+
+.error {
+    background-color: rgb(247, 9, 9);
+    color: black;
+    padding: 10px;
+    width: 95%;
+    border-radius: 5px;
+    margin: 20px auto;
+}
+
+p {
+    font-size: 22px;
+    color: turquoise;
+}
